@@ -8,6 +8,8 @@ from sklearn.model_selection import train_test_split
 
 IMG_SIZE = 64
 
+//focused only on the nose portion to detect the head movement
+
 def load_data(dataset_path):
     X, y = [], []
     labels = {"Nose_still": 0, "Nose_moving": 1}
