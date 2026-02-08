@@ -57,7 +57,7 @@ while True:
                 # Draw prediction
                 cv2.putText(frame, f"{label} ({confidence:.2f})", (30, 50),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-
+                
     cv2.imshow("Head Movement Detection", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
